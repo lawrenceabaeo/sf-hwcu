@@ -1,28 +1,7 @@
-== README
+sf-hwcu
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+================
 
-Things you may want to cover:
+# SF Human Waste Cleanups
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This web application pays tribute to the cleaning up of peoples' 'tributes' to the City of San Francisco, that is, their public human waste.  Cleanup data is provided by San Francisco's Open Data project ([https://data.sfgov.org](data.sfgov.org)). Find out how active your district is in cleanup!
