@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SfHwcu</title>
+  <title>SF-HWCU: San Francisco Human Waste Clean Up</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <ul>
+    <li><%= link_to 'Home', '#' %></li>
+    <li><%= link_to 'Clean Ups', '#' %></li>
+    <ul>
+      <li><%= link_to 'Districts', '#' %></li>
+    </ul>
+    <li><%= link_to 'Resources', '#' %></li>
+  </ul>
+  <%= yield %>
+  <footer>
+    <small>&copy; 2014.</small>
+  </footer>
 </body>
 </html>
