@@ -7,8 +7,7 @@
     <%= image_tag(@hero_placeholder_url, alt: "Hero Image") %>
   </div>
   <div class="col-md-2"></div>
-</div>
-
+</div><!-- class row -->  
 
 <div class="row">`
   <div class="col-md-2"></div>
@@ -16,97 +15,23 @@
     <h1>Districts</h1>
   </div>
   <div class="col-md-2"></div>
-</div>
+</div><!-- class row -->  
 
 <div class="row">`
-  <ul>
-    <li>
-      <h2>District X</h2>
-      <%= image_tag(@placeholder_url, alt: "District Image") %>
-      <ul>
-        <li>Total 5 year: XXX</li>
-        <li>Average per month:  XXX</li>
-      </ul>
-    </li> 
-    <li>
-      <h2>District X</h2>
-      <%= image_tag(@placeholder_url, alt: "District Image") %>
-      <ul>
-        <li>Total 5 year: XXX</li>
-        <li>Average per month:  XXX</li>
-      </ul>
-    </li> 
-    <li>
-      <h2>District X</h2>
-      <%= image_tag(@placeholder_url, alt: "District Image") %>
-      <ul>
-        <li>Total 5 year: XXX</li>
-        <li>Average per month:  XXX</li>
-      </ul>
-    </li> 
-    <li>
-      <h2>District X</h2>
-      <%= image_tag(@placeholder_url, alt: "District Image") %>
-      <ul>
-        <li>Total 5 year: XXX</li>
-        <li>Average per month:  XXX</li>
-      </ul>
-    </li> 
-    <li>
-      <h2>District X</h2>
-      <%= image_tag(@placeholder_url, alt: "District Image") %>
-      <ul>
-        <li>Total 5 year: XXX</li>
-        <li>Average per month:  XXX</li>
-      </ul>
-    </li> 
-    <li>
-      <h2>District X</h2>
-      <%= image_tag(@placeholder_url, alt: "District Image") %>
-      <ul>
-        <li>Total 5 year: XXX</li>
-        <li>Average per month:  XXX</li>
-      </ul>
-    </li> 
-    <li>
-      <h2>District X</h2>
-      <%= image_tag(@placeholder_url, alt: "District Image") %>
-      <ul>
-        <li>Total 5 year: XXX</li>
-        <li>Average per month:  XXX</li>
-      </ul>
-    </li> 
-    <li>
-      <h2>District X</h2>
-      <%= image_tag(@placeholder_url, alt: "District Image") %>
-      <ul>
-        <li>Total 5 year: XXX</li>
-        <li>Average per month:  XXX</li>
-      </ul>
-    </li> 
-    <li>
-      <h2>District X</h2>
-      <%= image_tag(@placeholder_url, alt: "District Image") %>
-      <ul>
-        <li>Total 5 year: XXX</li>
-        <li>Average per month:  XXX</li>
-      </ul>
-    </li> 
-    <li>
-      <h2>District X</h2>
-      <%= image_tag(@placeholder_url, alt: "District Image") %>
-      <ul>
-        <li>Total 5 year: XXX</li>
-        <li>Average per month:  XXX</li>
-      </ul>
-    </li> 
-    <li>
-      <h2>District X</h2>
-      <%= image_tag(@placeholder_url, alt: "District Image") %>
-      <ul>
-        <li>Total 5 year: XXX</li>
-        <li>Average per month:  XXX</li>
-      </ul>
-    </li> 
-  </ul>
-</div>
+  <div class="col-md-2"></div>
+    <ul>
+      <% 11.times do |i| %>
+        <div class="col-md-3">
+          <li>
+            <h2>District <%= i+1 %></h2>
+            <%= image_tag(@placeholder_url, alt: "District Image") %>
+            <ul>
+              <li>Total 5 year: XXX</li>
+              <li>Average per month:  XXX</li>
+            </ul>
+          </li> 
+        </div><!-- class col-md-3 --> 
+      <% end %>
+    </ul>
+  <div class="col-md-2"></div>
+</div><!-- class row -->  
