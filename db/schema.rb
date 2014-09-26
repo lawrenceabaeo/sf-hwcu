@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140926170542) do
+ActiveRecord::Schema.define(version: 20140926220819) do
+
+  create_table "cleanups", force: true do |t|
+    t.integer  "case_id"
+    t.datetime "case_opened"
+    t.datetime "case_closed"
+    t.string   "status"
+    t.string   "responsible_agency"
+    t.string   "address"
+    t.string   "category"
+    t.string   "request_type"
+    t.string   "request_details"
+    t.string   "source"
+    t.integer  "supervisor_district"
+    t.string   "neighborhood"
+    t.datetime "case_updated"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "districts", force: true do |t|
     t.integer  "district_number"
