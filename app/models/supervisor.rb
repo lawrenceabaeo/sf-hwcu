@@ -5,7 +5,10 @@ class Supervisor < ActiveRecord::Base
   # districts may have supes may with the same name (ex. John Smith)
   
   validates :district, uniqueness: true
-  
+
+  # Yes, had to use 'their_district' because I already made a column called 'district', which is exactly the conventional way of referring to the class...and I was too lazy to alter the existing column name
+  belongs_to :their_district, :class_name => "District", :foreign_key => "district"
+
   def self.xml_parser
   # https://taimoorchangaizpucitian.wordpress.com/2013/05/18/nokogiri-xml-parsing/
     file = "zip_code_to_supervisor_lookup_with_contact_information_rows.xml"
