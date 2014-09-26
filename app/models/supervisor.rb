@@ -22,39 +22,24 @@ class Supervisor < ActiveRecord::Base
       else
         entry_hash = {
           district: district.text,
-          name: element_value(e, "name"),
-          phone_number: attribute_value(:xml_entry => e, :xml_element => "phone", :attribute => "phone_number"), 
-          facebook_url: attribute_value(:xml_entry => e, :xml_element => "facebook", :attribute => "url"),  
-          email: element_value(e, "email"),
-          website_url: attribute_value(:xml_entry => e, :xml_element => "website", :attribute => "url"), 
-          twitter: element_value(e, "twitter"),
-          address: element_value(e, "address")
+          name: ApplicationController.helpers.element_value(
+            xml_entry: e, xml_element: "name"),
+          phone_number: ApplicationController.helpers.attribute_value(
+            xml_entry: e, xml_element: "phone", attribute: "phone_number"),
+          facebook_url: ApplicationController.helpers.attribute_value(
+            xml_entry: e, xml_element: "facebook", attribute: "url"),
+          email: ApplicationController.helpers.element_value( 
+            xml_entry: e, xml_element: "email"),
+          website_url: ApplicationController.helpers.attribute_value(
+            xml_entry: e, xml_element: "website", attribute: "url"),
+          twitter: ApplicationController.helpers.element_value(
+            xml_entry: e, xml_element: "twitter"),
+          address: ApplicationController.helpers.element_value(
+            xml_entry: e, xml_element: "address")
         }
         new_record = Supervisor.create(entry_hash)
       end # if Supervisor exists
     end # entries each do
   end # self.xml_parser
-
-  # =======================================================
-  private
-
-  def self.element_value(xml_entry, xml_element)
-    if xml_entry.at_xpath(xml_element).nil?
-      return ""
-    else 
-      return xml_entry.at_xpath(xml_element).text
-    end
-  end # element_value
-
-  def self.attribute_value(args)
-    @xml_entry = args[:xml_entry]
-    @xml_element = args[:xml_element]
-    @attribute = args[:attribute]
-    if @xml_entry.at_xpath(@xml_element).attribute(@attribute).nil?
-      return ""
-    else 
-      return @xml_entry.at_xpath(@xml_element).attribute(@attribute).text
-    end
-  end
 
 end #Class Supervisor
