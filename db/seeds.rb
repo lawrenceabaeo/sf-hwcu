@@ -8,6 +8,10 @@
 
 number_of_districts = 11
 number_of_districts.times do |n|
+  # Note: there is a uniqueness validation in 
+  # District model
   District.create(district_number: n+1)
 end
+
+Supervisor.xml_parser
 
