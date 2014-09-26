@@ -9,38 +9,4 @@
   <div class="col-md-2"></div>
 </div><!-- class row -->  
 
-<div id="Districts"><!-- added id to use for anchor tag--> 
-  <div class="row">`
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-      <h1>Districts</h1>
-    </div>
-    <div class="col-md-2"></div>
-  </div><!-- class row -->  
-
-  <div class="row">`
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-      <div class="container-fluid">
-        <div class="row"
-          <ul>
-            <% 11.times do |i| %>
-              <div class="col-md-4">
-                <li>
-                  <h2>District <%= i+1 %></h2>
-                  <%= image_tag(@placeholder_url, alt: "District Image") %>
-                  <ul>
-                    <li>Total 5 year: XXX</li>
-                    <li>Average per month:  XXX</li>
-                  </ul>
-                </li> 
-              </div><!-- class col-md-4--> 
-            <% end %>
-          </ul>
-        </div><!-- row--> 
-      </div><!-- container-fluid-->
-    </div><!--col-md-8-->
-    <div class="col-md-2"></div>
-  </div><!-- row-->  
-
-</div><!-- id=Districts-->
+<%= render 'districts' %>
