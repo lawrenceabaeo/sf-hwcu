@@ -13,13 +13,13 @@
       <div class="container-fluid">
         <div class="row"
           <ul>
-            <% 11.times do |i| %>
+            <% @districts.each do |district| %>
               <div class="col-md-4">
                 <li>
-                  <h2>District <%= i+1 %></h2>
+                  <h2>District <%= district.district_number %></h2>
                   <%= image_tag(@placeholder_url, alt: "District Image") %>
                   <ul>
-                    <li>Total 5 year: XXX</li>
+                    <li>Total 5 year: OOO </li>
                     <li>Average per month:  XXX</li>
                   </ul>
                 </li> 
