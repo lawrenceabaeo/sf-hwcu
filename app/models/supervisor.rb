@@ -1,4 +1,11 @@
 class Supervisor < ActiveRecord::Base
+  # Note: For this simple app we are not considering
+  # historical supervisors (we are only considering the current 
+  # supervisor as of 09-26-2014), or the possibility that two different 
+  # districts may have supes may with the same name (ex. John Smith)
+  
+  validates :district, uniqueness: true
+  
   def self.xml_parser
   # https://taimoorchangaizpucitian.wordpress.com/2013/05/18/nokogiri-xml-parsing/
     file = "zip_code_to_supervisor_lookup_with_contact_information_rows.xml"
