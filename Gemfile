@@ -61,3 +61,7 @@ gem 'bootstrap-sass', '~> 3.2.0'
 
 # Use autoprefixer to add browser vendor prefixes automagically
 gem 'autoprefixer-rails'
+
+# Use nokogiri to parse xml files
+gem 'nokogiri'
+
