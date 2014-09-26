@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+number_of_districts = 11
+number_of_districts.times do |n|
+  District.create(district_number: n+1)
+end
+
