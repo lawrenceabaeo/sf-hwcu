@@ -1,6 +1,9 @@
 class Cleanup < ActiveRecord::Base
   validates :case_id, uniqueness: true
 
+  # Yes, had to use 'their_district' because I already made a column called 'district', which is exactly the conventional way of referring to the class...and I was too lazy to alter the existing column name
+  belongs_to :cleanup_district, :class_name => "District", :primary_key => "district_number", :foreign_key => "supervisor_district"
+
   def self.xml_parser
   # https://taimoorchangaizpucitian.wordpress.com/2013/05/18/nokogiri-xml-parsing/
     file = "human_waste_rows.xml"
