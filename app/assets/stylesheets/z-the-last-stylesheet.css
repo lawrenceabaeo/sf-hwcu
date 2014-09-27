@@ -1,3 +1,6 @@
-.district-col > li {
-  list-style-type: none;
+.district-col {
+  text-align: center; /* This affects the image too? */
+}
+.district-col li {
+  text-align: left;
 }
