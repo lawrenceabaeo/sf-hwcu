@@ -1,3 +1,9 @@
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
 .district-col {
   text-align: center; /* This affects the image too? */
 }
