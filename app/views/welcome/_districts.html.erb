@@ -1,27 +1,22 @@
+<hr>
 <div id="Districts"><!-- added id to use for anchor tag--> 
-  <div class="row">`
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-      <h1>Districts</h1>
-    </div>
-    <div class="col-md-2"></div>
-  </div><!-- class row -->  
+  <h1>Cleanups in San Francisco Districts</h1>
 
   <div class="row">`
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <div class="container-fluid">
         <div class="row">
-            <% @districts.each do |district| %>
-              <div class="col-md-4 district-col">
-                  <h2>District <%= district.district_number %></h2>
-                  <%= image_tag(@placeholder_url, alt: "District Image") %>
-                  <ul>
-                    <li>Total 5 year: OOO </li>
-                    <li>Average per month:  XXX</li>
-                  </ul>
-              </div><!-- class col-md-4 district-col --> 
-            <% end %>
+          <% @districts.each do |district| %>
+            <div class="col-md-4 district-col">
+              <h2>District <%= district.district_number %></h2>
+              <%= image_tag(@placeholder_url, alt: "District Image") %>
+              <ul>
+                <li>Total 5 year: OOO </li>
+                <li>Average per month:  XXX</li>
+              </ul>
+            </div><!-- class col-md-4 district-col --> 
+          <% end %>
         </div><!-- row--> 
       </div><!-- container-fluid-->
     </div><!--col-md-8-->
