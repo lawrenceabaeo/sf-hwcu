@@ -15,3 +15,5 @@ end
 
 Supervisor.xml_parser
 
+Cleanup.xml_parser
+
