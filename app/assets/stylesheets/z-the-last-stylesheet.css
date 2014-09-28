@@ -17,6 +17,10 @@
   height: 200px;
   width: 200px;
 }
+.hero-image {
+  height: 350px;
+  width: 300px;
+}
 #Districts h1 {
   text-align: center;
 }
