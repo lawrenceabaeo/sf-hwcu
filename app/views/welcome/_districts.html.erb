@@ -8,12 +8,24 @@
         <div class="col-md-4 district-col">
           <h2>District <%= district.district_number %></h2>
           <%= image_tag(@placeholder_url, alt: "District Image") %>
+          <h4>Cleanups</h3>
           <ul>
-            <li>Total 5 year: OOO </li>
-            <li>Average per month:  XXX</li>
+            <% district_cleanups_count = district.cleanups.size %> 
+            <li><%= district_cleanups_count %> -  Total # during period</li>
+            <li><%= district_cleanups_count / 6 %> - Average # per month</li>
           </ul>
         </div><!-- class col-md-4 district-col --> 
       <% end %>
+
+      <div class="col-md-4 district-col all-districts">
+        <h2>All Districts</h2>
+        <%= image_tag(@placeholder_url, alt: "District Image") %>
+        <ul>
+          <% all_cleanups_count = Cleanup.where("supervisor_district > 0").size %>
+          <li><%= all_cleanups_count %> - Total # cleanups during period</li>
+          <li><%= all_cleanups_count / 6 %> - Average # cleanups per month</li>
+        </ul>
+      <div><!-- end of class="col-md-4 district-col all-districts"-->
     </div><!-- row--> 
   </div><!-- container-fluid-->
 
