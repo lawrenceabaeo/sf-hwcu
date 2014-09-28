@@ -7,7 +7,7 @@
       <% @districts.each do |district| %>
         <div class="col-md-4 district-col">
           <h2>District <%= district.district_number %></h2>
-          <%= image_tag(@placeholder_url, alt: "District Image") %>
+          <%= image_tag('/assets/San_Francisco_District_'+district.district_number.to_s+'_(2012).svg', alt: "District Image", class: "district-thumbs") %>
           <h5>Cleanups</h5>
           <ul>
             <% district_cleanups_count = district.cleanups.size %> 

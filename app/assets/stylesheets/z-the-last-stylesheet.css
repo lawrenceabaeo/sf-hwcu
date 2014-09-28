@@ -11,6 +11,12 @@
 .district-col li {
   text-align: left;
 }
+.district-thumbs {
+  border: 1px solid;
+  border-color: #A6A6C3;
+  height: 200px;
+  width: 200px;
+}
 #Districts h1 {
   text-align: center;
 }
