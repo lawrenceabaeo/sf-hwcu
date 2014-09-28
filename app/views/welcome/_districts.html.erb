@@ -8,7 +8,7 @@
         <div class="col-md-4 district-col">
           <h2>District <%= district.district_number %></h2>
           <%= image_tag(@placeholder_url, alt: "District Image") %>
-          <h4>Cleanups</h3>
+          <h5>Cleanups</h5>
           <ul>
             <% district_cleanups_count = district.cleanups.size %> 
             <li><%= district_cleanups_count %> -  Total # during period</li>
@@ -20,6 +20,7 @@
       <div class="col-md-4 district-col all-districts">
         <h2>All Districts</h2>
         <%= image_tag(@placeholder_url, alt: "District Image") %>
+        <h5>Cleanups</h5>
         <ul>
           <% all_cleanups_count = Cleanup.where("supervisor_district > 0").size %>
           <li><%= all_cleanups_count %> - Total # cleanups during period</li>
