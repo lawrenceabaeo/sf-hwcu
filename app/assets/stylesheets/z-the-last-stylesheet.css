@@ -3,6 +3,9 @@
   .container {
     max-width: 730px;
   }
+  .hero-image {
+    margin-top: 40px;
+  }
 }
 .district-col {
   text-align: center; /* This affects the image too? */
