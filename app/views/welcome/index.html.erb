@@ -1,9 +1,16 @@
 <div class="row">
   <div class="col-md-6">
-    <p>This website pays tribute to the cleaning up of peoples' 'tributes' to the City of San Francisco, that is, their public human waste.  Cleanup data is provided by San Francisco's Open Data project (<%= link_to 'data.sfgov.org', 'https://data.sfgov.org' %>). Find out how active your district was with clean ups!
+    <h1>San Francisco Human Waste Cleanups</h1>
+    
+    <p>Poo and pee - we all do it, some more publicly than others. <%= link_to("San Francisco's 311 Agency", "http://www.sf311.org/") %>  takes and processes calls to clean up these ‘human waste or urination’ cases that occur in public areas (such as sidewalks, parks, streets and alleys). 
+
+    <p><%= link_to("San Francisco's Open Data Project", "https://data.sfgov.org") %>
+ reveals how many cleanups occur; in a 6 month period in 2013, the 311 agency recorded 3600+ clean up cases, an amazing number given the relatively small 49 square mile footprint that San Francisco occupies. In the section below, you can glance at how many occurred in this period in each of San Francisco’s eleven districts. 
+
+    <p>If you see or smell human feces, pee or vomit while out and about in San Francisco, check the <%=link_to("resources section", @resources_url) %> on who to contact. 
   </div>
   <div class="col-md-6">
-    <%= image_tag("hwcu-image_600x700.png", alt: "Hero Image", class: "hero-image") %>
+    <%= image_tag(@hero_image, alt: "Hero Image", class: "hero-image") %>
   </div>
 </div><!-- class row -->  
 
