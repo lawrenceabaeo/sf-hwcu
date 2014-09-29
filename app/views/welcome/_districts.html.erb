@@ -12,8 +12,8 @@
           <h5>Human Waste Cleanups</h5>
           <ul>
             <% district_cleanups_count = district.cleanups.size %> 
-            <li><%= district_cleanups_count %> -  Total during period</li>
-            <li><%= district_cleanups_count / 6 %> - Average per month</li>
+            <li><%= district_cleanups_count %> -  Total # during period</li>
+            <li><%= district_cleanups_count / 6 %> - Average # per month</li>
           </ul>
         </div><!-- class col-md-4 district-col --> 
       <% end %>
@@ -24,9 +24,9 @@
         <h5>Human Waste Cleanups</h5>
         <ul>
           <% all_cleanups_count = Cleanup.where("supervisor_district > 0").size %>
-          <li><%= all_cleanups_count %> - Total during period</li>
-          <li><%= all_cleanups_count / 6 %> - Average per month</li>
-          <li><%= all_cleanups_count / (365/2) %> - Average per day</li>
+          <li><%= all_cleanups_count %> - Total # during period</li>
+          <li><%= all_cleanups_count / 6 %> - Average # per month</li>
+          <li><%= all_cleanups_count / (365/2) %> - Average # per day</li>
         </ul>
       <div><!-- end of class="col-md-4 district-col all-districts"-->
     </div><!-- row--> 
