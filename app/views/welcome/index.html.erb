@@ -1,13 +1,13 @@
 <div class="row">
   <div class="col-md-6">
     <h1>San Francisco Human Waste Cleanups</h1>
+
+    <p>Pee and poo - we all do it, some more publicly than others. <%= link_to("San Francisco's 311 Agency", "http://www.sf311.org/") %> takes calls to clean up these 'human waste or urination' cases (which also include blood and vomit) that occur in public areas like sidewalks, streets and alleys.
+
+      <p>How many of these cleanups occur? SF311 provided the <%= link_to("San Francisco Open Data Project", "https://data.sfgov.org") %> with information from a 6 month stretch in 2013.<sup><%= link_to("1", "#citation-1") %></sup> That dataset revealed 3600+ cleanups, an amazing number given the relatively small 49 square mile footprint the city occupies. In the section below, you can glance at how the 3600+ cases break down within each of SF's 11 districts, as well as SF as a whole.
+
+    <p>Do you see or smell human feces, pee or vomit while out and about in San Francisco? Check the <%= link_to("Contact section", @contact_url) %> on how to request a cleanup. 
     
-    <p>Poo and pee - we all do it, some more publicly than others. <%= link_to("San Francisco's 311 Agency", "http://www.sf311.org/") %>  takes and processes calls to clean up these ‘human waste or urination’ cases that occur in public areas (such as sidewalks, parks, streets and alleys). 
-
-    <p><%= link_to("San Francisco's Open Data Project", "https://data.sfgov.org") %>
- reveals how many cleanups occur; in a 6 month period in 2013, the 311 agency recorded 3600+ clean up cases, an amazing number given the relatively small 49 square mile footprint that San Francisco occupies. In the section below, you can glance at how many occurred in this period in each of San Francisco’s eleven districts. 
-
-    <p>If you see or smell human feces, pee or vomit while out and about in San Francisco, check the <%=link_to("resources section", @resources_url) %> on who to contact. 
   </div>
   <div class="col-md-6">
     <%= image_tag(@hero_image, alt: "Hero Image", class: "hero-image") %>
@@ -18,4 +18,5 @@
 
 <%= render 'contact' %>
 
+<%= render 'references' %>
 
