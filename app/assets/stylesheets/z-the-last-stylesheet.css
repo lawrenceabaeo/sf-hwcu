@@ -7,6 +7,9 @@
     margin-top: 40px;
   }
 }
+.period {
+  text-align: center;
+}
 .district-col {
   text-align: center; /* This affects the image too? */
   margin-bottom: 35px;

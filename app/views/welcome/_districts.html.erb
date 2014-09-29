@@ -1,6 +1,7 @@
 <hr>
 <div id="Districts"><!-- added id to use for anchor tag--> 
   <h1>Cleanups in San Francisco Districts</h1>
+  <h2 class="period">Period: January 2013 - June 2013</h2>
 
   <div class="container-fluid">
     <div class="row">
@@ -8,11 +9,11 @@
         <div class="col-md-4 district-col">
           <h2>District <%= district.district_number %></h2>
           <%= image_tag('/assets/San_Francisco_District_'+district.district_number.to_s+'_(2012).svg', alt: "District Image", class: "district-thumbs") %>
-          <h5>Cleanups</h5>
+          <h5>Human Waste Cleanups</h5>
           <ul>
             <% district_cleanups_count = district.cleanups.size %> 
-            <li><%= district_cleanups_count %> -  Total # during period</li>
-            <li><%= district_cleanups_count / 6 %> - Average # per month</li>
+            <li><%= district_cleanups_count %> -  Total during period</li>
+            <li><%= district_cleanups_count / 6 %> - Average per month</li>
           </ul>
         </div><!-- class col-md-4 district-col --> 
       <% end %>
@@ -20,11 +21,12 @@
       <div class="col-md-4 district-col all-districts">
         <h2>All Districts</h2>
         <%= image_tag(@all_districts_image,  alt: "All Districts Image", class: "district-thumbs") %>
-        <h5>Cleanups</h5>
+        <h5>Human Waste Cleanups</h5>
         <ul>
           <% all_cleanups_count = Cleanup.where("supervisor_district > 0").size %>
-          <li><%= all_cleanups_count %> - Total # cleanups during period</li>
-          <li><%= all_cleanups_count / 6 %> - Average # cleanups per month</li>
+          <li><%= all_cleanups_count %> - Total during period</li>
+          <li><%= all_cleanups_count / 6 %> - Average per month</li>
+          <li><%= all_cleanups_count / (365/2) %> - Average per day</li>
         </ul>
       <div><!-- end of class="col-md-4 district-col all-districts"-->
     </div><!-- row--> 
