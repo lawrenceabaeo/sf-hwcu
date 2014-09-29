@@ -19,7 +19,7 @@
 
       <div class="col-md-4 district-col all-districts">
         <h2>All Districts</h2>
-        <%= image_tag(@placeholder_url, alt: "District Image") %>
+        <%= image_tag(@all_districts_image,  alt: "All Districts Image", class: "district-thumbs") %>
         <h5>Cleanups</h5>
         <ul>
           <% all_cleanups_count = Cleanup.where("supervisor_district > 0").size %>
