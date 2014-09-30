@@ -65,3 +65,8 @@ gem 'autoprefixer-rails'
 # Use nokogiri to parse xml files
 gem 'nokogiri'
 
+# Use font-awesome-rails
+# because there's problems with bootstrap-sass glyphicons 
+# right now
+gem 'font-awesome-rails'
+
