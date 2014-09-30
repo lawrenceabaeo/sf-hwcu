@@ -5,7 +5,7 @@
 
 ## About
 
-This infotainment brochure website introduces users to San Francisco’s Human Waste and Urine Cleanup efforts. It was produced as an entry for the 2014 ‘[San Francisco Open Data Coding Contest](http://www.programmr.com/hired-coding-contest)’, held by [programmr.com](http://www.programmr.com) and sponsored by [hired.com](http://www.hired.com)
+This infotainment brochure website introduces users to San Francisco’s Human Waste and Urine Cleanup efforts. It was designed as a responsive website, and should be comfortably viewable on both a desktop machine as well as mobile devices. It was produced as an entry for the 2014 ‘[San Francisco Open Data Coding Contest](http://www.programmr.com/hired-coding-contest)’, held by [programmr.com](http://www.programmr.com) and sponsored by [hired.com](http://www.hired.com)
 
 ## Data
 
