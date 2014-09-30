@@ -11,6 +11,9 @@ figcaption {
   text-align: center;
   font-style: italic;
 }
+footer {
+  margin-bottom: 40px;
+}
 .period {
   text-align: center;
 }
