@@ -30,6 +30,9 @@ figcaption {
   height: 200px;
   width: 200px;
 }
+.main h1 {
+  text-align: center;
+}
 .seal-image {
   margin-top: 20px;
   width: 300px;
