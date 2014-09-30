@@ -11,7 +11,7 @@ figcaption {
   text-align: center;
   font-style: italic;
 }
-footer {
+.copyright-section {
   margin-bottom: 40px;
   margin-right: 20px;
   float: right;
