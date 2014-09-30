@@ -18,8 +18,11 @@ figcaption {
   text-align: center; /* This affects the image too? */
   margin-bottom: 35px;
 }
-.district-col li {
+.district-stats {
+  display: inline-block;
   text-align: left;
+  list-style-type: square;
+  padding-left: 0px; /* Had to add this because default adds 40px */
 }
 .district-thumbs {
   border: 1px solid;

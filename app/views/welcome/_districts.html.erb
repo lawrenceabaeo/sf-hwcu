@@ -10,21 +10,21 @@
           <h2>District <%= district.district_number %></h2>
           <%= image_tag('/assets/San_Francisco_District_'+district.district_number.to_s+'_(2012).svg', alt: "District Image", class: "district-thumbs") %>
           <h5>Human Waste Cleanups</h5>
-          <ul>
+          <ul class="district-stats">
             <% district_cleanups_count = district.cleanups.size %> 
-            <li><%= district_cleanups_count %> -  Total # during period</li>
+            <li><%= district_cleanups_count %> -  Total # in 6 mo. period</li>
             <li><%= district_cleanups_count / 6 %> - Average # per month</li>
           </ul>
         </div><!-- class col-md-4 district-col --> 
       <% end %>
 
-      <div class="col-md-4 district-col all-districts">
+      <div class="col-md-4 district-col districts-stats">
         <h2>All Districts</h2>
         <%= image_tag(@all_districts_image,  alt: "All Districts Image", class: "district-thumbs") %>
         <h5>Human Waste Cleanups</h5>
-        <ul>
+        <ul class="district-stats">
           <% all_cleanups_count = Cleanup.where("supervisor_district > 0").size %>
-          <li><%= all_cleanups_count %> - Total # during period</li>
+          <li><%= all_cleanups_count %> - Total # in 6 mo.  period</li>
           <li><%= all_cleanups_count / 6 %> - Average # per month</li>
           <li><%= all_cleanups_count / (365/2) %> - Average # per day</li>
         </ul>
