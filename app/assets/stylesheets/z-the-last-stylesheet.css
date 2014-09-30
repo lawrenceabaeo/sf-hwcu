@@ -54,3 +54,9 @@ footer {
 #Districts h1, #Districts p {
   text-align: center;
 }
+.goodbye {
+  text-align: center;
+}
+.hazmat-goodbye-man {
+  width: 300px;
+}
