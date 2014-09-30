@@ -3,26 +3,32 @@
     <div class="col-md-6">
       <h1>San Francisco Human Waste Cleanups</h1>
 
-      <h4>Pee and poo - we all do it, some more publicly than others.</h4> <p><%= link_to("San Francisco's 311 Agency", "http://www.sf311.org/") %> takes calls to clean up 'human waste or urination' cases (which also include blood and vomit) that occur in public areas like sidewalks, streets and alleys.
+      <h4>Pee and poo - we all do it, some more publicly than others.</h4>
+      <p>When someone wants public poop cleaned up in San Francisco, they call <%= link_to("San Francisco's 311 Agency", "http://www.sf311.org/") %>. 311 records these 'human waste and urination' cases (which also include blood and vomit) and then typically routes it to <%= link_to("SF's Department of Public Works", "http://sfdpw.org/") %> to do the physical cleanup work. 
+        
+      <h4>How many cleanups occur?</h4>
+      <p>SF311 has shared their cleanup case data with the <%= link_to("SF Open Data Project", "https://data.sfgov.org") %>. The dataset from a 6 month stretch in 2013<sup><%= link_to("[1]", "#citation-1") %></sup> revealed 3600+ human waste cleanups, an amazing number given the small 49 square mile footprint the city occupies. In the <%= link_to("section below", "#Districts") %>, you can glance at how the 3600+ cases break down within each of SF's 11 districts, as well as SF as a whole.
 
-        <h4>How many cleanups occur?</h4><p>SF311 provides the <%= link_to("San Francisco Open Data Project", "https://data.sfgov.org") %> with their case information. The dataset from a 6 month stretch in 2013<sup><%= link_to("[1]", "#citation-1") %></sup> revealed 3600+ human waste cleanups, an amazing number given the small 49 square mile footprint the city occupies. In the <%= link_to("section below", "#Districts") %>, you can glance at how the 3600+ cases break down within each of SF's 11 districts, as well as SF as a whole.
+      <h4>See or smell human feces?</h4>
+      <p>Do you see (or smell) human excrement, urine, blood or vomit while out and about in San Francisco? Check the <%= link_to("Contact section", @contact_url) %> on how to request a cleanup. 
 
-          <h4>See or smell human feces?</h4> <p>Do you see (or smell) human excrement, urine, blood or vomit while out and about in San Francisco? Check the <%= link_to("Contact section", @contact_url) %> on how to request a cleanup. 
+    </div><!-- end of div class col-md-6-->
 
-          </div><!-- end of div class col-md-6-->
-          <div class="col-md-6">
-            <figure>
-            <%= image_tag(@sf_seal_image, alt: "Seal of San Francisco", class: "seal-image") %>
-            <figcaption>SF City Seal image provided by sfcontroller.org<sup><%= link_to("[2]", "#citation-2") %></sup></figcaption>
-            </figure>
-            <%= image_tag(@hero_image, alt: "Hero Image", class: "hero-image") %>
-          </div><!-- end of div class col-md-6-->
-        </div><!-- class row -->  
-      </div><!-- end of class main-->
+    <div class="col-md-6">
+      <figure>
+      <%= image_tag(@sf_seal_image, alt: "Seal of San Francisco", class: "seal-image") %>
+      <figcaption>SF City Seal image provided by sfcontroller.org<sup><%= link_to("[2]", "#citation-2") %></sup></figcaption>
+      </figure>
+      <%= image_tag(@hero_image, alt: "Hero Image", class: "hero-image") %>
+    </div><!-- end of div class col-md-6-->
+    
+  </div><!-- class row -->  
 
-      <%= render 'districts' %>
+</div><!-- end of class main-->
 
-      <%= render 'contact' %>
+<%= render 'districts' %>
 
-      <%= render 'references' %>
+<%= render 'contact' %>
+
+<%= render 'references' %>
 
